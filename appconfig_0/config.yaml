@@ -1,0 +1,137 @@
+devices:
+    common: []
+    debug: []
+    release: []
+dockercomposefile:
+    common: ''
+    debug: ''
+    release: ''
+extraparms:
+    common:
+        cap_add: CAP_NET_ADMIN
+        network_mode: host
+    debug: {}
+    release: {}
+id: 5abaa0c4-ced0-4b45-be54-92516aa2ab55
+images:
+    debug: sha256:5f3f01e1a869fed20807cde1515249faa8bf97dc1921d4089a939572410d2fa1
+    release: ''
+imagetags:
+    debug: qt_isobus_arm64v8-qt5-vivante-no-ssh_bullseye_debug_5abaa0c4-ced0-4b45-be54-92516aa2ab55
+    release: qt_isobus_arm64v8-qt5-vivante-no-ssh_bullseye_release_5abaa0c4-ced0-4b45-be54-92516aa2ab55
+modificationdate: '2022-02-02T18:17:25.444506'
+networks:
+    common: []
+    debug: []
+    release: []
+platformid: arm64v8-qt5-vivante-no-ssh_bullseye
+ports:
+    common: {}
+    debug: {}
+    release: {}
+privatekey: '-----BEGIN RSA PRIVATE KEY-----
+
+    MIIEpQIBAAKCAQEA5OKjlXmLmDjkQjIoPqQxBGWVZIe2VwIqpfiHQ487un4c9uXj
+
+    YpRS/s2m93ncVnom4JaWRN2IJG5IcfVqUjiDkMWJpQaAVrH5SANBQYTR//6ceT2p
+
+    kIpWpARxYjS2bsdvxFmSxQkozz4iZlwRSyQqe7mg/W9HMII8GVap0hGP8sYkvZ+5
+
+    K39gYsR6aDLvRRxpseTicqU2DeOnml7hflE/3VfLCHsiNV3i5uRtji54RVauHosw
+
+    hz+hpAPOTJrUb/XYkb0WQcNXMliIbkPZHs4jLUGI8Ex2FRg4ktglzsViCrWJBoQ/
+
+    V6vlqXcJhu/dG4l9AcBeJjvBwJfr6J/7rPDymQIDAQABAoIBAQCc9/U54IZkmbeo
+
+    0h8Zfp8DJeuDazMYjqrS8hNJuOQ8bJrOlDAR/ijBCCaWl+MNB268HWnmxorEeUGD
+
+    rcwBoTJRSbexDjlbu2h7A4hwN3eReXq0Bx7Pup/akhV0RTRL2siCvu9R44syPal3
+
+    y3IstxvPiCmpRPRshxRSSEXkhBjVY9PuB0XmOHjm3KAlQO2Xv2emjTC7cR29CByg
+
+    BQCgwc4QFbJ1KdQkpkfvDL5Kzt3gikKi+BKK+wphN0YKUf7pBftTnR5Rla+CSYQg
+
+    DpTE+RgAN5fWwCY3ErmlcGBJzxtoqHKpOVplFyBeHZcsfCMu6m7vhnxXotVhF7VG
+
+    AX8tAwKlAoGBAPPRFYLurB67Q3HrEgdZ05M+kCEhFEmaas+e1zunnd6XJN89ayRy
+
+    4hOf9zDiJxVlp7ST0Bizk9lAEVGq8W1fO15utTgcsEapUyVJKMDa0ZJtGu4Shu1I
+
+    IA2kIQOfxvfExtce2lA5IiuWB98HCMsx1kN40va0YFT7UFkDPbht5pFTAoGBAPBS
+
+    jSmoiY6hv4uKIy9l7XZsppdtf9omQowOXMtTDkUKXv4SbgoVMkRpC/Po+TpnBZW5
+
+    /a+gbBEi6ISEUQZDpmLGVvGRwcjF+8x/cZZXDpwrQ3oVsBb2TfXP4jOPgIYyEOtj
+
+    qwejLJ6wWuvbMaXLQJRa/l34y+jH9jqyic1fmNLjAoGBAOgxzae0vsxBkLiTosbH
+
+    X/vRUBeM1jJGUcRKRDW2ql0KWf4UEs5SbkU8SYAPUCNLfUw2nK55jqsOHbBF+Mgt
+
+    Mm/7RLAcei/BH8LZimsnuQAW0de6Yy7kSkpTbXFzH1xk1OyXoFdYIdeaeQKIQ3Kn
+
+    kqMNFPQH0dn8wIcU1Bmo6DSrAoGBAJutflBcIy/IS+LCy2Qq7Rbn70rs3gOdAULl
+
+    EuuLlBTZUQvZOHtDm9qBCgMpCjnw/sctQs8AZsD7EhC1/h7GuAQIY839E8FRr3mb
+
+    nSM8pfQ4em+dmQJm772quueXsDQ+PoOdfu9lnsP1jhB3X8P81IrGHz0UrFLRJgqE
+
+    GYx2vvLtAoGAHE354cL7ulEYonm0Fh3xm4ziMtL9aDVcCNVoANsExfZEf6FThAnG
+
+    vfj2bFAC6R7vNB2JgzSITEKOZ1ut4U/+1jt7soh87ER2LDv5F0u0B1apobIHg3v7
+
+    4QQ/PYLc7Yyx75dhQyQ2LlNhPQjrKusByTKAl2lb8BbGugfiILLvPp4=
+
+    -----END RSA PRIVATE KEY-----
+
+    '
+props:
+    common:
+        appname: Qt_isobus
+        arg: ''
+        buildcommands: ''
+        buildfiles: ''
+        command: ''
+        devpackages: qtdeclarative5-dev:#%platform.debian-arch%# libegl-dev:#%platform.debian-arch%#
+            libgl-dev:#%platform.debian-arch%#
+        env: ''
+        exename: Qt_isobus
+        expose: ''
+        extrapackages: qml-module-qtquick2 qml-module-qtquick-window2 qml-module-qtquick-controls2
+            iproute2 qtvirtualkeyboard-plugin qml-module-qt-labs-folderlistmodel qml-module-qtquick-virtualkeyboard
+            can-utils qml-module-qtqml iproute2 can-utils python3-can
+        language: c-cpp-nossh
+        preinstallcommands: ''
+        sdkpostinstallcommands: ''
+        sdkpreinstallcommands: ''
+        targetcommands: ''
+        targetfiles: ''
+    debug:
+        arg: 'ARG SSHUSERNAME=#%application.username%#
+
+            '
+    release: {}
+publickey: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDk4qOVeYuYOORCMig+pDEEZZVkh7ZXAiql+IdDjzu6fhz25eNilFL+zab3edxWeibglpZE3Ygkbkhx9WpSOIOQxYmlBoBWsflIA0FBhNH//px5PamQilakBHFiNLZux2/EWZLFCSjPPiJmXBFLJCp7uaD9b0cwgjwZVqnSEY/yxiS9n7krf2BixHpoMu9FHGmx5OJypTYN46eaXuF+UT/dV8sIeyI1XeLm5G2OLnhFVq4eizCHP6GkA85MmtRv9diRvRZBw1cyWIhuQ9keziMtQYjwTHYVGDiS2CXOxWIKtYkGhD9Xq+WpdwmG790biX0BwF4mO8HAl+von/us8PKZ
+sdkimages:
+    debug: sha256:916139065b857d523134957cff4a78de645cdf8e5fd1c01aeab020ccac44d400
+    release: ''
+sdkimagetags:
+    debug: qt_isobus_arm64v8-qt5-vivante-no-ssh_bullseye_debug_5abaa0c4-ced0-4b45-be54-92516aa2ab55_sdk_image
+    release: qt_isobus_arm64v8-qt5-vivante-no-ssh_bullseye_release_5abaa0c4-ced0-4b45-be54-92516aa2ab55_sdk_image
+sdksshaddress:
+    debug: null
+    release: null
+shutdownscript:
+    common: ''
+    debug: ''
+    release: ''
+startupscript:
+    common: ''
+    debug: ''
+    release: ''
+username: root
+volumes:
+    common:
+        /dev: /dev
+    debug:
+        /home/torizon/Qt_isobus: /Qt_isobus,rw
+    release: {}
