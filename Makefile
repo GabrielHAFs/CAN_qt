@@ -37,7 +37,7 @@ MOVE          = mv -f
 TAR           = tar -cf
 COMPRESS      = gzip -9f
 DISTNAME      = Qt_isobus1.0.0
-DISTDIR = /workspaces/Rover4We/Qt_isobus/.tmp/Qt_isobus1.0.0
+DISTDIR = /workspaces/CAN_qt/.tmp/Qt_isobus1.0.0
 LINK          = aarch64-linux-gnu-g++
 LFLAGS        = 
 LIBS          = $(SUBLIBS) /usr/lib/aarch64-linux-gnu/libQt5Quick.so /usr/lib/aarch64-linux-gnu/libQt5Gui.so /usr/lib/aarch64-linux-gnu/libQt5QmlModels.so /usr/lib/aarch64-linux-gnu/libQt5Qml.so /usr/lib/aarch64-linux-gnu/libQt5Network.so /usr/lib/aarch64-linux-gnu/libQt5Core.so -lpthread   
@@ -383,7 +383,7 @@ compiler_moc_header_clean:
 moc_Backend.cpp: Backend.h \
 		moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /workspaces/Rover4We/Qt_isobus/moc_predefs.h -I/usr/lib/aarch64-linux-gnu/qt5/mkspecs/linux-g++ -I/workspaces/Rover4We/Qt_isobus -I/usr/include/aarch64-linux-gnu/qt5 -I/usr/include/aarch64-linux-gnu/qt5/QtQuick -I/usr/include/aarch64-linux-gnu/qt5/QtGui -I/usr/include/aarch64-linux-gnu/qt5/QtQmlModels -I/usr/include/aarch64-linux-gnu/qt5/QtQml -I/usr/include/aarch64-linux-gnu/qt5/QtNetwork -I/usr/include/aarch64-linux-gnu/qt5/QtCore -I/usr/aarch64-linux-gnu/include/c++/10 -I/usr/aarch64-linux-gnu/include/c++/10/aarch64-linux-gnu -I/usr/aarch64-linux-gnu/include/c++/10/backward -I/usr/lib/gcc-cross/aarch64-linux-gnu/10/include -I/usr/aarch64-linux-gnu/include -I/usr/include/aarch64-linux-gnu -I/usr/include Backend.h -o moc_Backend.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /workspaces/CAN_qt/moc_predefs.h -I/usr/lib/aarch64-linux-gnu/qt5/mkspecs/linux-g++ -I/workspaces/CAN_qt -I/usr/include/aarch64-linux-gnu/qt5 -I/usr/include/aarch64-linux-gnu/qt5/QtQuick -I/usr/include/aarch64-linux-gnu/qt5/QtGui -I/usr/include/aarch64-linux-gnu/qt5/QtQmlModels -I/usr/include/aarch64-linux-gnu/qt5/QtQml -I/usr/include/aarch64-linux-gnu/qt5/QtNetwork -I/usr/include/aarch64-linux-gnu/qt5/QtCore -I/usr/aarch64-linux-gnu/include/c++/10 -I/usr/aarch64-linux-gnu/include/c++/10/aarch64-linux-gnu -I/usr/aarch64-linux-gnu/include/c++/10/backward -I/usr/lib/gcc-cross/aarch64-linux-gnu/10/include -I/usr/aarch64-linux-gnu/include -I/usr/include/aarch64-linux-gnu -I/usr/include Backend.h -o moc_Backend.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:

@@ -7,7 +7,7 @@
 BackEnd::BackEnd(QObject *parent) : QObject(parent){
     initObjectDictionary();
 
-    m_canFrameWrite.can_dlc = 8;
+    m_canFrameWrite.can_dlc = 1;
 
 };
 
@@ -67,12 +67,12 @@ void BackEnd::setAcceleration(float acc)
     sendAcceleration((u_int32_t) m_acceleration);
 }
 
-void BackEnd::setSteer(float stier)
+void BackEnd::setSteer(float str)
 {
-    m_steer = stier;
+    m_steer = str;
     // Para mandar o valor para CAN, como o intervalo do slide é de -1 a 1, 
     // soma-se 1 ao valor e multiplica-se por 10 para eliminar o passo. 
-    m_steer = (stier + 1) * 10 ;
+    m_steer = (str + 1) * 10 ;
     qDebug() << "CAN steer is " << (uint32_t) m_steer;
     sendSteer((uint32_t) m_steer);
     

@@ -5,9 +5,14 @@
 int main(int argc, char *argv[])
 {
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
+    system("ip link set can0 down");
+
+    std::this_thread::sleep_for(std::chrono::milliseconds(100));
+
+    system("ip link set can0 up type can bitrate 500000 loopback on");
 
     QGuiApplication app(argc, argv);
-
+    
     qmlRegisterType<BackEnd>("io.qt.examples.backend", 1, 0, "BackEnd");
 
     QQmlApplicationEngine engine;
@@ -21,3 +26,4 @@ int main(int argc, char *argv[])
 
     return app.exec();
 }
+
